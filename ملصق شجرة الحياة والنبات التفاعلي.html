@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ملصق شجرة الحياة والنبات التفاعلي</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap">
+<style>
+:root{--bg:#F6F1E7;--ink:#1F3B2D;--card:#FFFDF8;--acc:#B4532E;--mut:#6B5D45;--line:#DDD3BE;--btn:#EAE2CF;--on:#1F3B2D;--onink:#F6F1E7;--gold:#E0B04A;--sel:#B4532E;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14241C;--ink:#F1EBDD;--card:#1E3328;--acc:#E8B85A;--mut:#B3C2B7;--line:#34503F;--btn:#2B4A3A;--on:#E0B04A;--onink:#1F3B2D;--sel:#F1EBDD}}
+:root[data-theme="dark"]{--bg:#14241C;--ink:#F1EBDD;--card:#1E3328;--acc:#E8B85A;--mut:#B3C2B7;--line:#34503F;--btn:#2B4A3A;--on:#E0B04A;--onink:#1F3B2D;--sel:#F1EBDD}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Tajawal,system-ui,sans-serif;line-height:1.65;font-size:17px}
+.wrap{max-width:980px;margin:0 auto;padding:16px 14px 40px}
+.hero{background:#1F3B2D;color:#F6F1E7;border-radius:26px;padding:34px 22px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;left:-70px;top:-70px;width:220px;height:220px;border-radius:50%;background:#E0B04A}
+.hero:after{content:"";position:absolute;left:40px;bottom:-60px;width:130px;height:130px;border-radius:50%;background:#B4532E}
+.hero>*{position:relative;z-index:1}
+.hero small{color:#E0B04A;font-weight:700;font-size:16px}
+.hero h1{font-size:clamp(34px,8vw,64px);margin:6px 0 10px;line-height:1.2;font-weight:800}
+.hero p{margin:0;max-width:560px;color:#DCE6DD}
+.hint{margin-top:16px;display:inline-block;background:#F6F1E7;color:#1F3B2D;border-radius:999px;padding:4px 16px;font-weight:700;font-size:15px}
+.sec{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:20px 16px;margin-top:18px}
+.part{color:var(--acc);font-weight:700;font-size:14px;margin:0}
+.sec h2{display:flex;gap:10px;align-items:center;font-size:clamp(22px,4.5vw,30px);margin:2px 0 4px;font-weight:800}
+.n{background:var(--on);color:var(--onink);width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-size:17px;flex:none}
+.lead{margin:0;color:var(--mut);font-size:15px}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.t,.bar,.tg{font:inherit;cursor:pointer;border:0;border-radius:999px;background:var(--btn);color:var(--ink);padding:8px 16px;font-weight:700;min-height:44px}
+.t.on,.bar.on,.tg.on{background:var(--on);color:var(--onink)}
+.panel{background:var(--bg);border-radius:16px;padding:16px 18px;border-inline-start:6px solid var(--acc);min-height:110px}
+.panel h3{margin:0 0 6px;font-size:22px}
+.panel p{margin:6px 0}
+.pop{animation:pop .35s}
+@keyframes pop{from{opacity:0;transform:translateY(10px)}}
+.bars{display:flex;flex-direction:column;align-items:center;gap:6px;margin:14px 0}
+.bar{border-radius:12px;display:flex;justify-content:space-between;width:var(--w);padding:6px 14px;font-size:16px}
+.bar.on{box-shadow:0 0 0 3px var(--sel)}
+.bar.sp{background:var(--gold);color:#1F3B2D}
+.latin{font-style:italic;direction:ltr;unicode-bidi:isolate}
+.chip{display:inline-block;background:var(--gold);color:#1F3B2D;font-weight:800;border-radius:999px;padding:2px 12px;font-size:15px;margin:2px 0}
+.row{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:10px}
+.mini{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px}
+.mini b{display:block;color:var(--acc);font-size:14px}
+.name{text-align:center;direction:ltr;font-size:clamp(30px,8vw,56px);font-weight:800;margin:14px 0}
+.name button{font:inherit;font-style:italic;font-weight:800;background:none;border:0;color:var(--ink);cursor:pointer;border-bottom:4px solid var(--gold);padding:0 4px}
+.name button.on{color:var(--acc)}
+.cl{display:grid;gap:16px;margin-top:12px}
+@media(min-width:800px){.cl{grid-template-columns:400px 1fr;align-items:start}}
+svg{max-width:100%;height:auto}
+.tip{cursor:pointer}.tip rect{fill:var(--on)}.tip text{fill:var(--onink);font-family:Tajawal,sans-serif}.tip.on rect{stroke:var(--sel);stroke-width:5}
+.sv{stroke:var(--ink);stroke-width:5;stroke-linecap:round;fill:none}
+.pl{fill:var(--gold)}.pt{fill:#1F3B2D;font-family:Tajawal,sans-serif;font-size:19px;font-weight:800;text-anchor:middle}
+.ft{fill:var(--ink);font-family:Tajawal,sans-serif;font-size:19px;font-weight:700;text-anchor:middle}
+.co .sept{display:none}
+footer{text-align:center;color:var(--mut);font-size:14px;margin-top:22px}
+</style></head><body><div class="wrap">
+<header class="hero"><small>تكليف: خريطة ذهنية بصرية تفاعلية</small><h1>شجرة الحياة والنبات</h1><p>من الممالك الستة والميكروبات إلى المجموعات النباتية الأربع، مع التسمية الثنائية لنخلة التمر.</p><span class="hint">اضغطي على أي عنصر لتكتشفي المزيد</span></header>
+
+<section class="sec"><p class="part">الجزء الأول · التسلسل التصنيفي</p><h2><span class="n">1</span>هرم المراتب التصنيفية</h2><p class="lead">من النطاق إلى النوع، على مثال نخيل التمر.</p><div id="pyr" class="bars"></div><div id="pyrP" class="panel"></div>
+<div class="name"><button id="bg" class="on">Phoenix</button> <button id="bs">dactylifera</button></div><div id="binP" class="panel"></div></section>
+
+<section class="sec"><p class="part">الجزء الأول · المقارنة بين الممالك</p><h2><span class="n">2</span>الممالك الست</h2><div id="kd"></div></section>
+
+<section class="sec"><p class="part">الجزء الثاني · مُعرِّف الميكروبات والفطريات</p><h2><span class="n">3</span>عالم الميكروبات</h2><div id="mb"></div></section>
+
+<section class="sec"><p class="part">الجزء الثالث · مسار التطور النباتي</p><h2><span class="n">4</span>الشجرة التطورية المبسطة</h2><p class="lead">اضغطي على أي مجموعة لترى خصائصها.</p><div class="cl"><div id="cs"></div><div id="cp" class="panel"></div></div></section>
+
+<section class="sec"><p class="part">الجزء الثالث · كاسيات البذور</p><h2><span class="n">5</span>الفلقة الواحدة أم الفلقتان؟</h2><div class="tabs"><button class="tg on" data-m="0">ذوات الفلقة الواحدة</button><button class="tg" data-m="1">ذوات الفلقتين</button></div><div id="md" class="panel"></div></section>
+<footer>المصدر: محاضرات تصنيف الكائنات وتصنيف النباتات (1 و2)</footer>
+</div>
+<script>
+const $=s=>document.querySelector(s);
+const pop=(el,h)=>{el.innerHTML=h;el.classList.remove('pop');void el.offsetWidth;el.classList.add('pop')};
+const L=t=>'<span class="latin">'+t+'</span>';
+// 1 pyramid
+const R=[['النطاق','Domain','Eukarya','أعلى رتبة، وتجمع الكائنات بحسب نوع الخلية. حقيقيات النواة هي النطاق الذي تنتمي إليه النباتات.'],
+['المملكة','Kingdom','Plantae','الفئة الأساسية للكائنات. هنا نستخدم نظام الممالك الست، والنباتات حقيقية النواة متعددة الخلايا وذاتية التغذية.'],
+['الشعبة','Phylum','Angiospermae','تجمع طوائف متقاربة. كاسيات البذور نباتات زهرية بذورها داخل ثمار.'],
+['الطائفة','Class','Liliopsida','تجمع رتبًا متقاربة. هي ذوات الفلقة الواحدة Monocots.'],
+['الرتبة','Order','Arecales','تجمع فصائل متقاربة.'],
+['الفصيلة','Family','Arecaceae','تجمع أجناسًا متقاربة. هي الفصيلة النخلية.'],
+['الجنس','Genus','Phoenix','يجمع أنواعًا متقاربة، وهو الكلمة الأولى في الاسم العلمي.'],
+['النوع','Species','Phoenix dactylifera','كائنات تشترك في صفات حيوية وتتزاوج فيما بينها. هو الوحدة الأساسية في التصنيف.']];
+const pyr=$('#pyr');
+R.forEach((r,i)=>{const b=document.createElement('button');b.className='bar'+(i==7?' sp':'');b.style.setProperty('--w',(62+i*5.4)+'%');b.innerHTML='<span>'+r[0]+'</span><span class="latin">'+r[1]+'</span>';b.onclick=()=>{pyr.querySelectorAll('.bar').forEach(x=>x.classList.remove('on'));b.classList.add('on');pop($('#pyrP'),'<h3>'+r[0]+' '+L(r[1])+'</h3><p><span class="chip">'+r[2]+'</span></p><p>'+r[3]+'</p>')};pyr.appendChild(b)});
+pyr.children[7].click();
+const B=[`<h3>الجنس ${L('Genus')}</h3><p>الكلمة الأولى ${L('Phoenix')}، وتبدأ بحرف كبير.</p><p>الاسم العلمي بالتسمية الثنائية: كلمتان لاتينيتان تُكتبان بخط مائل. وضعها العالم السويدي كارولوس لينيوس (1707–1778).</p>`,`<h3>النوع ${L('Species')}</h3><p>الكلمة الثانية ${L('dactylifera')}، وتُكتب بحرف صغير.</p><p>الاسم الكامل ${L('Phoenix dactylifera')} هو نخيل التمر.</p>`];
+const bg=$('#bg'),bs=$('#bs');
+bg.onclick=()=>{bg.classList.add('on');bs.classList.remove('on');pop($('#binP'),B[0])};
+bs.onclick=()=>{bs.classList.add('on');bg.classList.remove('on');pop($('#binP'),B[1])};
+bg.click();
+// generic tabs
+function tabs(sel,items,render){const h=$(sel);h.innerHTML='<div class="tabs"></div><div class="panel"></div>';const tb=h.firstChild,pn=h.lastChild;
+items.forEach((it,i)=>{const b=document.createElement('button');b.className='t';b.textContent=it.t;b.onclick=()=>{[...tb.children].forEach((c,j)=>c.classList.toggle('on',i==j));pop(pn,render(it))};tb.appendChild(b)});tb.firstChild.click()}
+// 2 kingdoms
+const K=[{t:'البكتيريا القديمة',e:'Archaebacteria',c:'بدائية النواة',n:'وحيدة الخلية',u:'ذاتية وغيرية، وبعضها بالتخليق الكيميائي',x:'تعيش في بيئات قاسية كالينابيع الكبريتية الحارة والبحيرات شديدة الملوحة. مثال: Halobacteria.'},
+{t:'البكتيريا الحقيقية',e:'Eubacteria',c:'بدائية النواة',n:'وحيدة الخلية',u:'ذاتية وغيرية',x:'تتكاثر بالانشطار الثنائي، ومعظم البكتيريا المسببة لأمراض الإنسان منها. مثال: Escherichia coli وStaphylococcus.'},
+{t:'الطلائعيات',e:'Protista',c:'حقيقية النواة',n:'وحيدة، وبعضها متعدد بسيط',u:'ذاتية وغيرية',x:'ليست نباتات ولا حيوانات ولا فطريات: نباتية ضوئية، وأوليات تبتلع غذاءها، وفطرية تمتص غذاءها. مثال: Amoeba وPediastrum.'},
+{t:'الفطريات',e:'Fungi',c:'حقيقية النواة',n:'وحيدة أو متعددة',u:'غيرية بالامتصاص',x:'جدارها الخلوي من الكيتين، وتفرز إنزيمات هاضمة، وتعمل محللات أو طفيليات.'},
+{t:'النباتات',e:'Plantae',c:'حقيقية النواة',n:'متعددة ومتخصصة',u:'ذاتية بالتمثيل الضوئي',x:'جدارها من السليلوز، وتخزن الغذاء نشا، وهي ثابتة لا تتحرك.'},
+{t:'الحيوانات',e:'Animalia',c:'حقيقية النواة',n:'متعددة',u:'غيرية بالابتلاع',x:'خلاياها بلا جدران، وأغلبها يتحرك: أسماك وطيور وزواحف وبرمائيات وثدييات، ومعها الإسفنج والحشرات.'}];
+tabs('#kd',K,k=>`<h3>${k.t} ${L(k.e)}</h3><div class="row"><div class="mini"><b>نوع الخلية</b>${k.c}</div><div class="mini"><b>عدد الخلايا</b>${k.n}</div><div class="mini"><b>التغذية</b>${k.u}</div></div><p>${k.x}</p>`);
+// 3 microbes
+const sp=(t,svg)=>`<div class="mini" style="text-align:center">${svg}<br>${t}</div>`;
+const M=[{t:'الفيروسات',h:()=>`<h3>الفيروسات ${L('Viruses')}</h3><p>طفيليات إجبارية داخل الخلايا ${L('Obligate intracellular parasites')}، وبعضها متخصص بعائل: فيروسات البكتيريا (العاثيات)، والحيوانية، والنباتية.</p><p>المادة الوراثية: <span class="chip">DNA</span> أو <span class="chip">RNA</span></p><p>الشكل الشائع عشريني الوجوه ${L('Icosahedral')}، وبعضها حلزوني.</p><p>التركيب: غلاف بروتيني (كابسيد) يحيط بالمادة الوراثية.</p>`},
+{t:'البكتيريا',h:()=>`<h3>البكتيريا ${L('Bacteria')}</h3><p>بدائية النواة، ولها ثلاثة أشكال رئيسية:</p><div class="row">`+sp('كروية '+L('Cocci'),'<svg width="70" height="70"><circle cx="35" cy="35" r="30" fill="#B4532E"/></svg>')+sp('عصوية '+L('Bacilli'),'<svg width="110" height="70"><rect x="5" y="15" width="100" height="40" rx="20" fill="#B4532E"/></svg>')+sp('حلزونية '+L('Spiral'),'<svg width="120" height="70"><path d="M8 35q14-40 28 0t28 0t28 0t20 0" fill="none" stroke="#B4532E" stroke-width="10" stroke-linecap="round"/></svg>')+'</div>'},
+{t:'الطحالب',h:()=>`<h3>الطحالب ${L('Algae')}</h3><p>مصطلح شامل تتوزع أنواعه على ممالك مختلفة، وأغلبها يُعد من النباتات. المخزون الغذائي يميز كل نوع:</p><div class="row"><div class="mini"><b>اليوجلينية ${L('Euglena')}</b><span class="chip">باراميلوم Paramylum</span></div><div class="mini"><b>الخضراء ${L('Spirogyra')}</b><span class="chip">نشا Starch</span></div><div class="mini"><b>الذهبية البنية ${L('Diatoms')}</b><span class="chip">زيت Oil</span><br>وفيها صبغة فيوكوزانثين</div><div class="mini"><b>البنية (بحرية)</b><span class="chip">لامينارين Laminarin</span></div></div>`},
+{t:'الفطريات',h:()=>`<h3>الفطريات ${L('Fungi')}</h3><p>جدارها الخلوي من الكيتين ${L('Chitin')}، وهي غيرية التغذية وبلا كلوروفيل. جسمها شبكة من الخيوط الفطرية ${L('hyphae')}.</p><div class="tabs"><button class="tg on" data-f="0">مقسمة Septate</button><button class="tg" data-f="1">مدمجة خلوية Coenocytic</button></div><svg id="hy" viewBox="0 0 300 90" width="100%" style="max-width:420px"><rect x="8" y="22" width="284" height="46" rx="23" fill="none" stroke="var(--ink)" stroke-width="4"/><g class="sept" stroke="var(--ink)" stroke-width="4"><path d="M90 22v46M170 22v46M250 22v46"/></g><g fill="#B4532E"><circle cx="50" cy="45" r="7"/><circle cx="130" cy="45" r="7"/><circle cx="210" cy="45" r="7"/><circle cx="272" cy="45" r="7"/></g></svg><p id="hyT">خيوط فيها حواجز عرضية (septa) تقسمها إلى خلايا.</p>`},
+{t:'الأشنات',h:()=>`<h3>الأشنات ${L('Lichens')}</h3><p>تكافل بين فطر (غالبًا من الأسكوميسيتات) وشريك ضوئي: طحلب أو بكتيريا زرقاء أو كلاهما.</p><svg viewBox="0 0 300 100" width="100%" style="max-width:380px"><rect x="10" y="10" width="280" height="26" rx="8" fill="#6B5D45"/><rect x="10" y="64" width="280" height="26" rx="8" fill="#6B5D45"/><g fill="#4C9A5F"><circle cx="40" cy="50" r="10"/><circle cx="90" cy="50" r="10"/><circle cx="140" cy="50" r="10"/><circle cx="190" cy="50" r="10"/><circle cx="240" cy="50" r="10"/></g></svg><p>الطبقة الخضراء للطحلب بين خيوط الفطر. تقاوم أقسى البيئات، وهي شديدة الحساسية للسموم فتكون مؤشرًا حيويًا على تلوث الهواء، ولبعضها استخدامات دوائية.</p>`}];
+tabs('#mb',M,m=>m.h());
+const HT=['خيوط فيها حواجز عرضية (septa) تقسمها إلى خلايا.','خيوط بلا حواجز، وفيها أنوية كثيرة داخل سيتوبلازم مشترك.'];
+document.addEventListener('click',e=>{const b=e.target.closest('[data-f]');if(b){b.parentNode.querySelectorAll('.tg').forEach(x=>x.classList.toggle('on',x==b));$('#hy').classList.toggle('co',b.dataset.f=='1');$('#hyT').textContent=HT[b.dataset.f]}
+const m=e.target.closest('[data-m]');if(m){document.querySelectorAll('[data-m]').forEach(x=>x.classList.toggle('on',x==m));md(+m.dataset.m)}});
+// 4 cladogram
+const G=[{y:410,a:'الحزازيات',e:'Bryophytes',v:'لا وعائية',r:'أبواغ، وتسبح الحيوانات المنوية في الماء، فتحتاج بيئة رطبة دائمًا.',d:'مشيجي (n)',x:'Funaria وMarchantia'},
+{y:300,a:'السرخسيات',e:'Pteridophytes',v:'وعائية بلا بذور',r:'أبواغ في أكياس بوغية تحت أوراق عريضة Fronds، وتبدأ الأوراق ملتفة على شكل رؤوس الكمان Fiddleheads.',d:'بوغي (2n)',x:'Pteris وLycopodium'},
+{y:190,a:'عاريات البذور',e:'Gymnosperms',v:'وعائية بذرية',r:'بذور عارية داخل مخاريط Cones.',d:'بوغي (2n)',x:'Cycas وGinkgo biloba وPinus'},
+{y:80,a:'كاسيات البذور',e:'Angiosperms',v:'وعائية بذرية زهرية',r:'أزهار وبذور داخل ثمار.',d:'بوغي (2n)',x:'Phoenix dactylifera'}];
+let s='<svg viewBox="0 0 400 590" width="100%" role="img" aria-label="شجرة تطورية: الحزازيات ثم السرخسيات ثم عاريات البذور ثم كاسيات البذور"><path class="sv" d="M70 530V80"/>';
+G.forEach((g,i)=>{s+=`<path class="sv" d="M70 ${g.y}H170"/><g class="tip" tabindex="0" role="button" data-g="${i}"><rect x="170" y="${g.y-38}" width="220" height="76" rx="14"/><text x="280" y="${g.y-6}" text-anchor="middle" font-size="24" font-weight="800">${g.a}</text><text x="280" y="${g.y+24}" text-anchor="middle" font-size="19" font-style="italic">${g.e}</text></g>`});
+[['الأبواغ',480],['نسيج وعائي',355],['البذور',245],['الأزهار',135]].forEach(p=>s+=`<rect class="pl" x="8" y="${p[1]-22}" width="124" height="44" rx="22"/><text class="pt" x="70" y="${p[1]+7}">${p[0]}</text>`);
+s+='<circle cx="70" cy="530" r="10" fill="#B4532E"/><text class="ft" x="70" y="566">أسلاف طحلبية</text></svg>';
+$('#cs').innerHTML=s;
+function cs(i){const g=G[i];document.querySelectorAll('.tip').forEach((t,j)=>t.classList.toggle('on',i==j));pop($('#cp'),`<h3>${g.a} ${L(g.e)}</h3><div class="row"><div class="mini"><b>النسيج الوعائي</b>${g.v}</div><div class="mini"><b>الطور السائد</b><span class="chip">${g.d}</span></div></div><p>${g.r}</p><p>أمثلة: ${L(g.x)}</p>`)}
+document.querySelectorAll('.tip').forEach(t=>{t.onclick=()=>cs(+t.dataset.g);t.onkeydown=e=>{if(e.key=='Enter'||e.key==' '){e.preventDefault();cs(+t.dataset.g)}}});
+cs(0);
+// 5 mono/di
+const MD=[['فلقة واحدة','عروق متوازية','أجزاء الزهرة من مضاعفات 3','جذور ليفية','حزم وعائية مبعثرة','مثال: نخيل التمر'],['فلقتان','عروق متفرعة','أجزاء الزهرة من مضاعفات 4 أو 5','جذر وتدي','حزم وعائية في حلقة','مثال: الجزر (جذره وتدي)']];
+const AT=['البذور','الأوراق','الأزهار','الجذور','السيقان'];
+function md(i){pop($('#md'),'<div class="row">'+AT.map((a,j)=>`<div class="mini"><b>${a}</b>${MD[i][j]}</div>`).join('')+'</div><p><span class="chip">'+MD[i][5]+'</span></p>')}
+md(0);
+</script></body></html>
